@@ -1,0 +1,86 @@
+{
+  "task": "sentiment",
+  "source": "news",
+  "size": 1000,
+  "fold": 1,
+  "seed": 43,
+  "n_folds_config": 6,
+  "n_train": 833,
+  "n_heldout": 167,
+  "n_gold_eval": 11980,
+  "n_benchmark": 30164,
+  "student_model": "microsoft/deberta-v3-base",
+  "hyperparams": {
+    "epochs": 3,
+    "weight_decay": 0.05,
+    "learning_rate": 2e-05
+  },
+  "warmup_ratio": 0.06,
+  "max_grad_norm": 1.0,
+  "class_weighting": true,
+  "label_smoothing": 0.0,
+  "final_train_loss": 0.5805177838547425,
+  "train_minutes": 0.26,
+  "train_class_dist": [
+    211,
+    231,
+    391
+  ],
+  "heldout_macro_f1": 0.8416573843662362,
+  "heldout_macro_precision": 0.8424471440617095,
+  "heldout_macro_recall": 0.8544260118283233,
+  "heldout_accuracy": 0.8383233532934131,
+  "heldout_f1_class_0": 0.8247422680412371,
+  "heldout_f1_class_1": 0.8735632183908046,
+  "heldout_f1_class_2": 0.8266666666666667,
+  "heldout_n_pred_classes": 3.0,
+  "heldout_collapsed": false,
+  "heldout_pred_dist": [
+    55,
+    41,
+    71
+  ],
+  "heldout_true_dist": [
+    42,
+    46,
+    79
+  ],
+  "gold_macro_f1": 0.6561470254178537,
+  "gold_macro_precision": 0.6912358054014414,
+  "gold_macro_recall": 0.6389977844991058,
+  "gold_accuracy": 0.6723706176961602,
+  "gold_f1_class_0": 0.6667534496224942,
+  "gold_f1_class_1": 0.604013208026416,
+  "gold_f1_class_2": 0.6976744186046512,
+  "gold_n_pred_classes": 3.0,
+  "gold_collapsed": false,
+  "gold_pred_dist": [
+    3460,
+    1691,
+    6829
+  ],
+  "gold_true_dist": [
+    4222,
+    2246,
+    5512
+  ],
+  "bench_macro_f1": 0.6679566343304071,
+  "bench_macro_precision": 0.6800034901615245,
+  "bench_macro_recall": 0.6663859677469753,
+  "bench_accuracy": 0.6674844185121337,
+  "bench_f1_class_0": 0.7191286856694304,
+  "bench_f1_class_1": 0.6476477131453249,
+  "bench_f1_class_2": 0.6370935041764658,
+  "bench_n_pred_classes": 3.0,
+  "bench_collapsed": false,
+  "bench_pred_dist": [
+    10943,
+    6632,
+    12589
+  ],
+  "bench_true_dist": [
+    9440,
+    8651,
+    12073
+  ]
+}

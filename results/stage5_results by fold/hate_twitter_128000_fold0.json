@@ -1,0 +1,86 @@
+{
+  "task": "hate",
+  "source": "twitter",
+  "size": 128000,
+  "fold": 0,
+  "seed": 42,
+  "n_folds_config": 6,
+  "n_train": 106666,
+  "n_heldout": 21334,
+  "n_gold_eval": 3846,
+  "n_benchmark": 24783,
+  "student_model": "microsoft/deberta-v3-base",
+  "hyperparams": {
+    "epochs": 3,
+    "weight_decay": 0.05,
+    "learning_rate": 3e-05
+  },
+  "warmup_ratio": 0.06,
+  "max_grad_norm": 1.0,
+  "class_weighting": true,
+  "label_smoothing": 0.0,
+  "final_train_loss": 0.4273161935327077,
+  "train_minutes": 27.99,
+  "train_class_dist": [
+    6481,
+    36386,
+    63799
+  ],
+  "heldout_macro_f1": 0.8188460998867052,
+  "heldout_macro_precision": 0.8083790812246208,
+  "heldout_macro_recall": 0.8317808443178398,
+  "heldout_accuracy": 0.8808943470516546,
+  "heldout_f1_class_0": 0.6832528778314148,
+  "heldout_f1_class_1": 0.8547075793338579,
+  "heldout_f1_class_2": 0.9185778424948429,
+  "heldout_n_pred_classes": 3.0,
+  "heldout_collapsed": false,
+  "heldout_pred_dist": [
+    1397,
+    7974,
+    11963
+  ],
+  "heldout_true_dist": [
+    1296,
+    7278,
+    12760
+  ],
+  "gold_macro_f1": 0.613415779290298,
+  "gold_macro_precision": 0.6246834702731334,
+  "gold_macro_recall": 0.6303156281792442,
+  "gold_accuracy": 0.6323452938117524,
+  "gold_f1_class_0": 0.727517682721455,
+  "gold_f1_class_1": 0.4647814910025707,
+  "gold_f1_class_2": 0.6479481641468683,
+  "gold_n_pred_classes": 3.0,
+  "gold_collapsed": false,
+  "gold_pred_dist": [
+    1763,
+    864,
+    1219
+  ],
+  "gold_true_dist": [
+    1206,
+    1081,
+    1559
+  ],
+  "bench_macro_f1": 0.6962865723961421,
+  "bench_macro_precision": 0.664158808448196,
+  "bench_macro_recall": 0.7535567516047931,
+  "bench_accuracy": 0.8388411411047896,
+  "bench_f1_class_0": 0.4047131147540984,
+  "bench_f1_class_1": 0.8980438163315417,
+  "bench_f1_class_2": 0.786102786102786,
+  "bench_n_pred_classes": 3.0,
+  "bench_collapsed": false,
+  "bench_pred_dist": [
+    2474,
+    17463,
+    4846
+  ],
+  "bench_true_dist": [
+    1430,
+    19190,
+    4163
+  ]
+}

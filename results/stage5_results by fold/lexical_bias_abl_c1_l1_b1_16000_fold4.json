@@ -1,0 +1,80 @@
+{
+  "task": "lexical_bias",
+  "source": "abl_c1_l1_b1",
+  "size": 16000,
+  "fold": 4,
+  "seed": 46,
+  "n_folds_config": 6,
+  "n_train": 13334,
+  "n_heldout": 2666,
+  "n_gold_eval": 735,
+  "n_benchmark": 7938,
+  "train_source_frac": null,
+  "student_model": "microsoft/deberta-v3-base",
+  "hyperparams": {
+    "epochs": 3,
+    "weight_decay": 0.05,
+    "learning_rate": 1e-05
+  },
+  "warmup_ratio": 0.06,
+  "max_grad_norm": 1.0,
+  "class_weighting": true,
+  "label_smoothing": 0.0,
+  "final_train_loss": 0.1722419590895458,
+  "train_minutes": 3.39,
+  "train_class_dist": [
+    6660,
+    6674
+  ],
+  "heldout_macro_f1": 0.9504853647664802,
+  "heldout_macro_precision": 0.9505845109111706,
+  "heldout_macro_recall": 0.9504932218575397,
+  "heldout_accuracy": 0.9504876219054764,
+  "heldout_mcc": 0.9010777281444192,
+  "heldout_f1_class_0": 0.9508196721311475,
+  "heldout_f1_class_1": 0.9501510574018127,
+  "heldout_n_pred_classes": 2.0,
+  "heldout_collapsed": false,
+  "heldout_pred_dist": [
+    1352,
+    1314
+  ],
+  "heldout_true_dist": [
+    1332,
+    1334
+  ],
+  "gold_macro_f1": 0.7488784574705131,
+  "gold_macro_precision": 0.7546841843875569,
+  "gold_macro_recall": 0.7506628353057929,
+  "gold_accuracy": 0.7496598639455783,
+  "gold_mcc": 0.5053310192977606,
+  "gold_f1_class_0": 0.7628865979381443,
+  "gold_f1_class_1": 0.7348703170028819,
+  "gold_n_pred_classes": 2.0,
+  "gold_collapsed": false,
+  "gold_pred_dist": [
+    414,
+    321
+  ],
+  "gold_true_dist": [
+    362,
+    373
+  ],
+  "bench_macro_f1": 0.5169295888166234,
+  "bench_macro_precision": 0.5327842482755016,
+  "bench_macro_recall": 0.6121758784563419,
+  "bench_accuracy": 0.7673217435122197,
+  "bench_mcc": 0.1212864683274307,
+  "bench_f1_class_0": 0.16914080071974807,
+  "bench_f1_class_1": 0.8647183769134988,
+  "bench_n_pred_classes": 2.0,
+  "bench_collapsed": false,
+  "bench_pred_dist": [
+    1794,
+    6144
+  ],
+  "bench_true_dist": [
+    429,
+    7509
+  ]
+}

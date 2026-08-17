@@ -1,0 +1,86 @@
+{
+  "task": "sentiment",
+  "source": "twitter",
+  "size": 16000,
+  "fold": 1,
+  "seed": 43,
+  "n_folds_config": 6,
+  "n_train": 13333,
+  "n_heldout": 2667,
+  "n_gold_eval": 11980,
+  "n_benchmark": 30164,
+  "student_model": "microsoft/deberta-v3-base",
+  "hyperparams": {
+    "epochs": 3,
+    "weight_decay": 0.05,
+    "learning_rate": 2e-05
+  },
+  "warmup_ratio": 0.06,
+  "max_grad_norm": 1.0,
+  "class_weighting": true,
+  "label_smoothing": 0.0,
+  "final_train_loss": 0.07470356345317772,
+  "train_minutes": 3.56,
+  "train_class_dist": [
+    4449,
+    4515,
+    4369
+  ],
+  "heldout_macro_f1": 0.994004096936474,
+  "heldout_macro_precision": 0.9940298228940333,
+  "heldout_macro_recall": 0.9940099535941797,
+  "heldout_accuracy": 0.9940007499062617,
+  "heldout_f1_class_0": 0.9932203389830508,
+  "heldout_f1_class_1": 0.9939260077305356,
+  "heldout_f1_class_2": 0.9948659440958357,
+  "heldout_n_pred_classes": 3.0,
+  "heldout_collapsed": false,
+  "heldout_pred_dist": [
+    880,
+    908,
+    879
+  ],
+  "heldout_true_dist": [
+    890,
+    903,
+    874
+  ],
+  "gold_macro_f1": 0.6555654302682513,
+  "gold_macro_precision": 0.6667302600919034,
+  "gold_macro_recall": 0.6878841297459152,
+  "gold_accuracy": 0.6599332220367279,
+  "gold_f1_class_0": 0.6906001644286106,
+  "gold_f1_class_1": 0.6061397779229262,
+  "gold_f1_class_2": 0.6699563484532169,
+  "gold_n_pred_classes": 3.0,
+  "gold_collapsed": false,
+  "gold_pred_dist": [
+    3076,
+    3878,
+    5026
+  ],
+  "gold_true_dist": [
+    4222,
+    2246,
+    5512
+  ],
+  "bench_macro_f1": 0.6198880234774299,
+  "bench_macro_precision": 0.6852848876345944,
+  "bench_macro_recall": 0.67271253232121,
+  "bench_accuracy": 0.635658400742607,
+  "bench_f1_class_0": 0.7360628769877536,
+  "bench_f1_class_1": 0.6747337412191253,
+  "bench_f1_class_2": 0.4488674522254106,
+  "bench_n_pred_classes": 3.0,
+  "bench_collapsed": false,
+  "bench_pred_dist": [
+    12444,
+    13414,
+    4306
+  ],
+  "bench_true_dist": [
+    9440,
+    8651,
+    12073
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "task": "sexism",
+  "source": "twitter",
+  "size": 1000,
+  "fold": 0,
+  "seed": 42,
+  "n_folds_config": 6,
+  "n_train": 833,
+  "n_heldout": 167,
+  "n_gold_eval": 2727,
+  "n_benchmark": 20000,
+  "student_model": "microsoft/deberta-v3-base",
+  "hyperparams": {
+    "epochs": 3,
+    "weight_decay": 0.05,
+    "learning_rate": 2e-05
+  },
+  "warmup_ratio": 0.06,
+  "max_grad_norm": 1.0,
+  "class_weighting": true,
+  "label_smoothing": 0.0,
+  "final_train_loss": 0.41441480468654035,
+  "train_minutes": 0.26,
+  "train_class_dist": [
+    267,
+    566
+  ],
+  "heldout_macro_f1": 0.8391322775787,
+  "heldout_macro_precision": 0.829381443298969,
+  "heldout_macro_recall": 0.8701588877855015,
+  "heldout_accuracy": 0.8502994011976048,
+  "heldout_f1_class_0": 0.7967479674796748,
+  "heldout_f1_class_1": 0.8815165876777251,
+  "heldout_n_pred_classes": 2.0,
+  "heldout_collapsed": false,
+  "heldout_pred_dist": [
+    70,
+    97
+  ],
+  "heldout_true_dist": [
+    53,
+    114
+  ],
+  "gold_macro_f1": 0.6710978754452668,
+  "gold_macro_precision": 0.7035584438339706,
+  "gold_macro_recall": 0.6512756181609335,
+  "gold_accuracy": 0.8668866886688669,
+  "gold_f1_class_0": 0.4173354735152488,
+  "gold_f1_class_1": 0.9248602773752846,
+  "gold_n_pred_classes": 2.0,
+  "gold_collapsed": false,
+  "gold_pred_dist": [
+    259,
+    2468
+  ],
+  "gold_true_dist": [
+    364,
+    2363
+  ],
+  "bench_macro_f1": 0.6316885402995343,
+  "bench_macro_precision": 0.6287354842691301,
+  "bench_macro_recall": 0.6632595463759934,
+  "bench_accuracy": 0.68695,
+  "bench_f1_class_0": 0.4890230963845589,
+  "bench_f1_class_1": 0.7743539842145096,
+  "bench_n_pred_classes": 2.0,
+  "bench_collapsed": false,
+  "bench_pred_dist": [
+    7399,
+    12601
+  ],
+  "bench_true_dist": [
+    4854,
+    15146
+  ]
+}

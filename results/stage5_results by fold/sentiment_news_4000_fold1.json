@@ -1,0 +1,86 @@
+{
+  "task": "sentiment",
+  "source": "news",
+  "size": 4000,
+  "fold": 1,
+  "seed": 43,
+  "n_folds_config": 6,
+  "n_train": 3333,
+  "n_heldout": 667,
+  "n_gold_eval": 11980,
+  "n_benchmark": 30164,
+  "student_model": "microsoft/deberta-v3-base",
+  "hyperparams": {
+    "epochs": 3,
+    "weight_decay": 0.05,
+    "learning_rate": 2e-05
+  },
+  "warmup_ratio": 0.06,
+  "max_grad_norm": 1.0,
+  "class_weighting": true,
+  "label_smoothing": 0.0,
+  "final_train_loss": 0.35623822388561527,
+  "train_minutes": 0.89,
+  "train_class_dist": [
+    807,
+    943,
+    1583
+  ],
+  "heldout_macro_f1": 0.8829650975092291,
+  "heldout_macro_precision": 0.8732012100878025,
+  "heldout_macro_recall": 0.9015334252001889,
+  "heldout_accuracy": 0.881559220389805,
+  "heldout_f1_class_0": 0.8753623188405797,
+  "heldout_f1_class_1": 0.9032258064516129,
+  "heldout_f1_class_2": 0.8703071672354948,
+  "heldout_n_pred_classes": 3.0,
+  "heldout_collapsed": false,
+  "heldout_pred_dist": [
+    183,
+    215,
+    269
+  ],
+  "heldout_true_dist": [
+    162,
+    188,
+    317
+  ],
+  "gold_macro_f1": 0.664136617704001,
+  "gold_macro_precision": 0.6791204422103608,
+  "gold_macro_recall": 0.6770769089693663,
+  "gold_accuracy": 0.6704507512520869,
+  "gold_f1_class_0": 0.6548446588168535,
+  "gold_f1_class_1": 0.6473966309341501,
+  "gold_f1_class_2": 0.6901685633609994,
+  "gold_n_pred_classes": 3.0,
+  "gold_collapsed": false,
+  "gold_pred_dist": [
+    2827,
+    2978,
+    6175
+  ],
+  "gold_true_dist": [
+    4222,
+    2246,
+    5512
+  ],
+  "bench_macro_f1": 0.6970530581587214,
+  "bench_macro_precision": 0.6997628488803738,
+  "bench_macro_recall": 0.7127486977632002,
+  "bench_accuracy": 0.6952658798567829,
+  "bench_f1_class_0": 0.7521190820756667,
+  "bench_f1_class_1": 0.7124755847147793,
+  "bench_f1_class_2": 0.6265645076857184,
+  "bench_n_pred_classes": 3.0,
+  "bench_collapsed": false,
+  "bench_pred_dist": [
+    9908,
+    11316,
+    8940
+  ],
+  "bench_true_dist": [
+    9440,
+    8651,
+    12073
+  ]
+}

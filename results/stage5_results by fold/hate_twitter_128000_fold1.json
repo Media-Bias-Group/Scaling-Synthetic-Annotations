@@ -1,0 +1,86 @@
+{
+  "task": "hate",
+  "source": "twitter",
+  "size": 128000,
+  "fold": 1,
+  "seed": 43,
+  "n_folds_config": 6,
+  "n_train": 106666,
+  "n_heldout": 21334,
+  "n_gold_eval": 3846,
+  "n_benchmark": 24783,
+  "student_model": "microsoft/deberta-v3-base",
+  "hyperparams": {
+    "epochs": 3,
+    "weight_decay": 0.05,
+    "learning_rate": 3e-05
+  },
+  "warmup_ratio": 0.06,
+  "max_grad_norm": 1.0,
+  "class_weighting": true,
+  "label_smoothing": 0.0,
+  "final_train_loss": 0.4318970753443679,
+  "train_minutes": 28.11,
+  "train_class_dist": [
+    6480,
+    36387,
+    63799
+  ],
+  "heldout_macro_f1": 0.8162969224618943,
+  "heldout_macro_precision": 0.8026209670810155,
+  "heldout_macro_recall": 0.8328603381779699,
+  "heldout_accuracy": 0.8808943470516546,
+  "heldout_f1_class_0": 0.6743933357479174,
+  "heldout_f1_class_1": 0.8546634870164282,
+  "heldout_f1_class_2": 0.9198339446213373,
+  "heldout_n_pred_classes": 3.0,
+  "heldout_collapsed": false,
+  "heldout_pred_dist": [
+    1464,
+    7819,
+    12051
+  ],
+  "heldout_true_dist": [
+    1297,
+    7277,
+    12760
+  ],
+  "gold_macro_f1": 0.6141367196984766,
+  "gold_macro_precision": 0.6250479889140199,
+  "gold_macro_recall": 0.631109841304813,
+  "gold_accuracy": 0.6320852834113364,
+  "gold_f1_class_0": 0.7294197031039136,
+  "gold_f1_class_1": 0.4695121951219512,
+  "gold_f1_class_2": 0.6434782608695652,
+  "gold_n_pred_classes": 3.0,
+  "gold_collapsed": false,
+  "gold_pred_dist": [
+    1758,
+    887,
+    1201
+  ],
+  "gold_true_dist": [
+    1206,
+    1081,
+    1559
+  ],
+  "bench_macro_f1": 0.6919227607890234,
+  "bench_macro_precision": 0.6608754073307743,
+  "bench_macro_recall": 0.7478674148193726,
+  "bench_accuracy": 0.8367832788605092,
+  "bench_f1_class_0": 0.39520652728199895,
+  "bench_f1_class_1": 0.8970520057814503,
+  "bench_f1_class_2": 0.7835097493036212,
+  "bench_n_pred_classes": 3.0,
+  "bench_collapsed": false,
+  "bench_pred_dist": [
+    2492,
+    17479,
+    4812
+  ],
+  "bench_true_dist": [
+    1430,
+    19190,
+    4163
+  ]
+}

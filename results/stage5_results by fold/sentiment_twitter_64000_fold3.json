@@ -1,0 +1,86 @@
+{
+  "task": "sentiment",
+  "source": "twitter",
+  "size": 64000,
+  "fold": 3,
+  "seed": 45,
+  "n_folds_config": 6,
+  "n_train": 53333,
+  "n_heldout": 10667,
+  "n_gold_eval": 11980,
+  "n_benchmark": 30164,
+  "student_model": "microsoft/deberta-v3-base",
+  "hyperparams": {
+    "epochs": 3,
+    "weight_decay": 0.05,
+    "learning_rate": 2e-05
+  },
+  "warmup_ratio": 0.06,
+  "max_grad_norm": 1.0,
+  "class_weighting": true,
+  "label_smoothing": 0.0,
+  "final_train_loss": 0.05233245056335865,
+  "train_minutes": 14.14,
+  "train_class_dist": [
+    18003,
+    17736,
+    17594
+  ],
+  "heldout_macro_f1": 0.9945564361337113,
+  "heldout_macro_precision": 0.9945470164406629,
+  "heldout_macro_recall": 0.9945734857204144,
+  "heldout_accuracy": 0.9945626699165651,
+  "heldout_f1_class_0": 0.9958240534521158,
+  "heldout_f1_class_1": 0.9937993235625705,
+  "heldout_f1_class_2": 0.9940459313864474,
+  "heldout_n_pred_classes": 3.0,
+  "heldout_collapsed": false,
+  "heldout_pred_dist": [
+    3583,
+    3549,
+    3535
+  ],
+  "heldout_true_dist": [
+    3601,
+    3547,
+    3519
+  ],
+  "gold_macro_f1": 0.6794593110723605,
+  "gold_macro_precision": 0.6775919471541586,
+  "gold_macro_recall": 0.7006610591665962,
+  "gold_accuracy": 0.6818864774624374,
+  "gold_f1_class_0": 0.6898184688239937,
+  "gold_f1_class_1": 0.6626151012891345,
+  "gold_f1_class_2": 0.6859443631039531,
+  "gold_n_pred_classes": 3.0,
+  "gold_collapsed": false,
+  "gold_pred_dist": [
+    3380,
+    3184,
+    5416
+  ],
+  "gold_true_dist": [
+    4222,
+    2246,
+    5512
+  ],
+  "bench_macro_f1": 0.6510556122756582,
+  "bench_macro_precision": 0.6893605569791131,
+  "bench_macro_recall": 0.6923721987025061,
+  "bench_accuracy": 0.6600583476992441,
+  "bench_f1_class_0": 0.7338876383848592,
+  "bench_f1_class_1": 0.7077201504976901,
+  "bench_f1_class_2": 0.5115590479444254,
+  "bench_n_pred_classes": 3.0,
+  "bench_collapsed": false,
+  "bench_pred_dist": [
+    12329,
+    12346,
+    5489
+  ],
+  "bench_true_dist": [
+    9440,
+    8651,
+    12073
+  ]
+}

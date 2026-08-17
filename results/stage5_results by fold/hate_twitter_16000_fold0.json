@@ -1,0 +1,86 @@
+{
+  "task": "hate",
+  "source": "twitter",
+  "size": 16000,
+  "fold": 0,
+  "seed": 42,
+  "n_folds_config": 6,
+  "n_train": 13333,
+  "n_heldout": 2667,
+  "n_gold_eval": 3846,
+  "n_benchmark": 24783,
+  "student_model": "microsoft/deberta-v3-base",
+  "hyperparams": {
+    "epochs": 3,
+    "weight_decay": 0.05,
+    "learning_rate": 3e-05
+  },
+  "warmup_ratio": 0.06,
+  "max_grad_norm": 1.0,
+  "class_weighting": true,
+  "label_smoothing": 0.0,
+  "final_train_loss": 0.5325762740523219,
+  "train_minutes": 3.51,
+  "train_class_dist": [
+    839,
+    4558,
+    7936
+  ],
+  "heldout_macro_f1": 0.7930166995359821,
+  "heldout_macro_precision": 0.7862447080916738,
+  "heldout_macro_recall": 0.8009886297668981,
+  "heldout_accuracy": 0.8672665916760405,
+  "heldout_f1_class_0": 0.627906976744186,
+  "heldout_f1_class_1": 0.8419936373276776,
+  "heldout_f1_class_2": 0.9091494845360825,
+  "heldout_n_pred_classes": 3.0,
+  "heldout_collapsed": false,
+  "heldout_pred_dist": [
+    176,
+    975,
+    1516
+  ],
+  "heldout_true_dist": [
+    168,
+    911,
+    1588
+  ],
+  "gold_macro_f1": 0.5863986162402862,
+  "gold_macro_precision": 0.5944102196142312,
+  "gold_macro_recall": 0.6019912866841874,
+  "gold_accuracy": 0.6076443057722309,
+  "gold_f1_class_0": 0.7017783857729138,
+  "gold_f1_class_1": 0.42510548523206754,
+  "gold_f1_class_2": 0.6323119777158774,
+  "gold_n_pred_classes": 3.0,
+  "gold_collapsed": false,
+  "gold_pred_dist": [
+    1718,
+    815,
+    1313
+  ],
+  "gold_true_dist": [
+    1206,
+    1081,
+    1559
+  ],
+  "bench_macro_f1": 0.719375159305428,
+  "bench_macro_precision": 0.6854784950425276,
+  "bench_macro_recall": 0.7730290600863355,
+  "bench_accuracy": 0.8599039664286002,
+  "bench_f1_class_0": 0.4234135667396061,
+  "bench_f1_class_1": 0.9127761453912286,
+  "bench_f1_class_2": 0.821935765785449,
+  "bench_n_pred_classes": 3.0,
+  "bench_collapsed": false,
+  "bench_pred_dist": [
+    2226,
+    17566,
+    4991
+  ],
+  "bench_true_dist": [
+    1430,
+    19190,
+    4163
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "task": "lexical_bias",
+  "source": "mixed",
+  "size": 16000,
+  "fold": 1,
+  "seed": 43,
+  "n_folds_config": 6,
+  "n_train": 13333,
+  "n_heldout": 2667,
+  "n_gold_eval": 735,
+  "n_benchmark": 7938,
+  "train_source_frac": {
+    "news": 0.5000375009375234,
+    "twitter": 0.4999624990624766
+  },
+  "student_model": "microsoft/deberta-v3-large",
+  "model_tag": "deberta-v3-large",
+  "hyperparams": {
+    "epochs": 3,
+    "weight_decay": 0.05,
+    "learning_rate": 1e-05
+  },
+  "warmup_ratio": 0.06,
+  "max_grad_norm": 1.0,
+  "class_weighting": true,
+  "label_smoothing": 0.0,
+  "final_train_loss": 0.21627810360098323,
+  "train_minutes": 12.69,
+  "train_class_dist": [
+    4667,
+    8666
+  ],
+  "heldout_macro_f1": 0.9055613674992793,
+  "heldout_macro_precision": 0.9076971303894963,
+  "heldout_macro_recall": 0.9035592296309483,
+  "heldout_accuracy": 0.9145106861642295,
+  "heldout_mcc": 0.8112458070467504,
+  "heldout_f1_class_0": 0.8764897074756229,
+  "heldout_f1_class_1": 0.9346330275229358,
+  "heldout_n_pred_classes": 2.0,
+  "heldout_collapsed": false,
+  "heldout_pred_dist": [
+    913,
+    1754
+  ],
+  "heldout_true_dist": [
+    933,
+    1734
+  ],
+  "gold_macro_f1": 0.826922542066472,
+  "gold_macro_precision": 0.8281705539358601,
+  "gold_macro_recall": 0.8267852117369988,
+  "gold_accuracy": 0.8272108843537415,
+  "gold_mcc": 0.6549543005547127,
+  "gold_f1_class_0": 0.8198581560283688,
+  "gold_f1_class_1": 0.8339869281045752,
+  "gold_n_pred_classes": 2.0,
+  "gold_collapsed": false,
+  "gold_pred_dist": [
+    343,
+    392
+  ],
+  "gold_true_dist": [
+    362,
+    373
+  ],
+  "bench_macro_f1": 0.5757640329725789,
+  "bench_macro_precision": 0.5631301040683875,
+  "bench_macro_recall": 0.6070347284889834,
+  "bench_accuracy": 0.8823381204333586,
+  "bench_mcc": 0.16440332780623543,
+  "bench_f1_class_0": 0.21512605042016808,
+  "bench_f1_class_1": 0.9364020155249898,
+  "bench_n_pred_classes": 2.0,
+  "bench_collapsed": false,
+  "bench_pred_dist": [
+    761,
+    7177
+  ],
+  "bench_true_dist": [
+    429,
+    7509
+  ]
+}

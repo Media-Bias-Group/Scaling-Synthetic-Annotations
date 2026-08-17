@@ -1,0 +1,84 @@
+{
+  "task": "lexical_bias",
+  "source": "mixed",
+  "size": 4000,
+  "fold": 4,
+  "seed": 46,
+  "n_folds_config": 6,
+  "n_train": 3334,
+  "n_heldout": 666,
+  "n_gold_eval": 735,
+  "n_benchmark": 7938,
+  "train_source_frac": {
+    "news": 0.5,
+    "twitter": 0.5
+  },
+  "student_model": "microsoft/deberta-v3-large",
+  "model_tag": "deberta-v3-large",
+  "hyperparams": {
+    "epochs": 3,
+    "weight_decay": 0.05,
+    "learning_rate": 1e-05
+  },
+  "warmup_ratio": 0.06,
+  "max_grad_norm": 1.0,
+  "class_weighting": true,
+  "label_smoothing": 0.0,
+  "final_train_loss": 0.3007832020521164,
+  "train_minutes": 3.31,
+  "train_class_dist": [
+    1128,
+    2206
+  ],
+  "heldout_macro_f1": 0.8822281167108754,
+  "heldout_macro_precision": 0.8885943440445809,
+  "heldout_macro_recall": 0.8768079347123465,
+  "heldout_accuracy": 0.8963963963963963,
+  "heldout_mcc": 0.765311524074576,
+  "heldout_f1_class_0": 0.8413793103448276,
+  "heldout_f1_class_1": 0.9230769230769231,
+  "heldout_n_pred_classes": 2.0,
+  "heldout_collapsed": false,
+  "heldout_pred_dist": [
+    211,
+    455
+  ],
+  "heldout_true_dist": [
+    224,
+    442
+  ],
+  "gold_macro_f1": 0.8043863028536653,
+  "gold_macro_precision": 0.809851247890041,
+  "gold_macro_recall": 0.8045228326396399,
+  "gold_accuracy": 0.8054421768707483,
+  "gold_mcc": 0.6143509736442272,
+  "gold_f1_class_0": 0.7900146842878121,
+  "gold_f1_class_1": 0.8187579214195184,
+  "gold_n_pred_classes": 2.0,
+  "gold_collapsed": false,
+  "gold_pred_dist": [
+    319,
+    416
+  ],
+  "gold_true_dist": [
+    362,
+    373
+  ],
+  "bench_macro_f1": 0.5654683437489773,
+  "bench_macro_precision": 0.5552671660842253,
+  "bench_macro_recall": 0.5897184450919968,
+  "bench_accuracy": 0.8828420256991686,
+  "bench_mcc": 0.14083301041613558,
+  "bench_f1_class_0": 0.19410745233968804,
+  "bench_f1_class_1": 0.9368292351582665,
+  "bench_n_pred_classes": 2.0,
+  "bench_collapsed": false,
+  "bench_pred_dist": [
+    725,
+    7213
+  ],
+  "bench_true_dist": [
+    429,
+    7509
+  ]
+}

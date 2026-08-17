@@ -1,0 +1,83 @@
+{
+  "task": "lexical_bias",
+  "source": "mixed",
+  "size": 1000,
+  "fold": 3,
+  "seed": 45,
+  "n_folds_config": 6,
+  "n_train": 833,
+  "n_heldout": 167,
+  "n_gold_eval": 735,
+  "n_benchmark": 7938,
+  "train_source_frac": {
+    "news": 0.49939975990396157,
+    "twitter": 0.5006002400960384
+  },
+  "student_model": "microsoft/deberta-v3-base",
+  "hyperparams": {
+    "epochs": 3,
+    "weight_decay": 0.05,
+    "learning_rate": 1e-05
+  },
+  "warmup_ratio": 0.06,
+  "max_grad_norm": 1.0,
+  "class_weighting": true,
+  "label_smoothing": 0.0,
+  "final_train_loss": 0.47561097594926943,
+  "train_minutes": 0.25,
+  "train_class_dist": [
+    294,
+    539
+  ],
+  "heldout_macro_f1": 0.8274066985645934,
+  "heldout_macro_precision": 0.8217071707170718,
+  "heldout_macro_recall": 0.8365505335844319,
+  "heldout_accuracy": 0.8383233532934131,
+  "heldout_mcc": 0.6580903280333739,
+  "heldout_f1_class_0": 0.784,
+  "heldout_f1_class_1": 0.8708133971291866,
+  "heldout_n_pred_classes": 2.0,
+  "heldout_collapsed": false,
+  "heldout_pred_dist": [
+    66,
+    101
+  ],
+  "heldout_true_dist": [
+    59,
+    108
+  ],
+  "gold_macro_f1": 0.7697338541193568,
+  "gold_macro_precision": 0.7706243032329989,
+  "gold_macro_recall": 0.7696702857227498,
+  "gold_accuracy": 0.7700680272108843,
+  "gold_mcc": 0.5402937466836457,
+  "gold_f1_class_0": 0.7609618104667609,
+  "gold_f1_class_1": 0.7785058977719528,
+  "gold_n_pred_classes": 2.0,
+  "gold_collapsed": false,
+  "gold_pred_dist": [
+    345,
+    390
+  ],
+  "gold_true_dist": [
+    362,
+    373
+  ],
+  "bench_macro_f1": 0.47871104934755837,
+  "bench_macro_precision": 0.526723820997244,
+  "bench_macro_recall": 0.6145166592629637,
+  "bench_accuracy": 0.6802721088435374,
+  "bench_mcc": 0.11064036701576543,
+  "bench_f1_class_0": 0.15456362425049966,
+  "bench_f1_class_1": 0.8028584744446171,
+  "bench_n_pred_classes": 2.0,
+  "bench_collapsed": false,
+  "bench_pred_dist": [
+    2573,
+    5365
+  ],
+  "bench_true_dist": [
+    429,
+    7509
+  ]
+}

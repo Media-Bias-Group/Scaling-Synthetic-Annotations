@@ -1,0 +1,93 @@
+{
+  "task": "sentiment",
+  "source": "mixed",
+  "size": 64000,
+  "fold": 2,
+  "seed": 44,
+  "n_folds_config": 6,
+  "n_train": 53333,
+  "n_heldout": 10667,
+  "n_gold_eval": 11980,
+  "n_benchmark": 30164,
+  "train_source_frac": {
+    "news": 0.4999906249414059,
+    "twitter": 0.5000093750585941
+  },
+  "student_model": "microsoft/deberta-v3-base",
+  "hyperparams": {
+    "epochs": 3,
+    "weight_decay": 0.05,
+    "learning_rate": 2e-05
+  },
+  "warmup_ratio": 0.06,
+  "max_grad_norm": 1.0,
+  "class_weighting": true,
+  "label_smoothing": 0.0,
+  "final_train_loss": 0.14709436859737376,
+  "train_minutes": 14.4,
+  "train_class_dist": [
+    15561,
+    16581,
+    21191
+  ],
+  "heldout_macro_f1": 0.9420902988804217,
+  "heldout_macro_precision": 0.9398617561938559,
+  "heldout_macro_recall": 0.945411997224738,
+  "heldout_accuracy": 0.9410330927158527,
+  "heldout_mcc": 0.9116145542277169,
+  "heldout_f1_class_0": 0.9410840534171249,
+  "heldout_f1_class_1": 0.9586482881280569,
+  "heldout_f1_class_2": 0.9265385550960836,
+  "heldout_n_pred_classes": 3.0,
+  "heldout_collapsed": false,
+  "heldout_pred_dist": [
+    3253,
+    3431,
+    3983
+  ],
+  "heldout_true_dist": [
+    3112,
+    3316,
+    4239
+  ],
+  "gold_macro_f1": 0.6998730025491994,
+  "gold_macro_precision": 0.6915850868136865,
+  "gold_macro_recall": 0.718637606949141,
+  "gold_accuracy": 0.701669449081803,
+  "gold_mcc": 0.5381157844651246,
+  "gold_f1_class_0": 0.7307265326261255,
+  "gold_f1_class_1": 0.6775181922635006,
+  "gold_f1_class_2": 0.691374282757972,
+  "gold_n_pred_classes": 3.0,
+  "gold_collapsed": false,
+  "gold_pred_dist": [
+    3885,
+    2976,
+    5119
+  ],
+  "gold_true_dist": [
+    4222,
+    2246,
+    5512
+  ],
+  "bench_macro_f1": 0.6808408057070755,
+  "bench_macro_precision": 0.6956238055384792,
+  "bench_macro_recall": 0.7101602680299912,
+  "bench_accuracy": 0.6839610131282323,
+  "bench_mcc": 0.5501331627270941,
+  "bench_f1_class_0": 0.741467458891806,
+  "bench_f1_class_1": 0.7355181757758577,
+  "bench_f1_class_2": 0.5655367824535628,
+  "bench_n_pred_classes": 3.0,
+  "bench_collapsed": false,
+  "bench_pred_dist": [
+    12271,
+    10908,
+    6985
+  ],
+  "bench_true_dist": [
+    9440,
+    8651,
+    12073
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "task": "lexical_bias",
+  "source": "mixed",
+  "size": 16000,
+  "fold": 5,
+  "seed": 47,
+  "n_folds_config": 6,
+  "n_train": 13334,
+  "n_heldout": 2666,
+  "n_gold_eval": 735,
+  "n_benchmark": 7938,
+  "train_source_frac": {
+    "news": 0.5,
+    "twitter": 0.5
+  },
+  "student_model": "microsoft/deberta-v3-large",
+  "model_tag": "deberta-v3-large",
+  "hyperparams": {
+    "epochs": 3,
+    "weight_decay": 0.05,
+    "learning_rate": 1e-05
+  },
+  "warmup_ratio": 0.06,
+  "max_grad_norm": 1.0,
+  "class_weighting": true,
+  "label_smoothing": 0.0,
+  "final_train_loss": 0.2158467047402457,
+  "train_minutes": 13.73,
+  "train_class_dist": [
+    4667,
+    8667
+  ],
+  "heldout_macro_f1": 0.9102591805555404,
+  "heldout_macro_precision": 0.9116328004382688,
+  "heldout_macro_recall": 0.908942110435534,
+  "heldout_accuracy": 0.9186046511627907,
+  "heldout_mcc": 0.8205704994349106,
+  "heldout_f1_class_0": 0.882892606583918,
+  "heldout_f1_class_1": 0.937625754527163,
+  "heldout_n_pred_classes": 2.0,
+  "heldout_collapsed": false,
+  "heldout_pred_dist": [
+    920,
+    1746
+  ],
+  "heldout_true_dist": [
+    933,
+    1733
+  ],
+  "gold_macro_f1": 0.8189993723163748,
+  "gold_macro_precision": 0.8190150651043595,
+  "gold_macro_recall": 0.8189867136699598,
+  "gold_accuracy": 0.819047619047619,
+  "gold_mcc": 0.6380017781443809,
+  "gold_f1_class_0": 0.8160442600276625,
+  "gold_f1_class_1": 0.821954484605087,
+  "gold_n_pred_classes": 2.0,
+  "gold_collapsed": false,
+  "gold_pred_dist": [
+    361,
+    374
+  ],
+  "gold_true_dist": [
+    362,
+    373
+  ],
+  "bench_macro_f1": 0.5809536044204148,
+  "bench_macro_precision": 0.5661767513673757,
+  "bench_macro_recall": 0.6291140607960424,
+  "bench_accuracy": 0.8721340388007055,
+  "bench_mcc": 0.18487129684547493,
+  "bench_f1_class_0": 0.23164269492808479,
+  "bench_f1_class_1": 0.9302645139127448,
+  "bench_n_pred_classes": 2.0,
+  "bench_collapsed": false,
+  "bench_pred_dist": [
+    892,
+    7046
+  ],
+  "bench_true_dist": [
+    429,
+    7509
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "task": "lexical_bias",
+  "source": "mixed",
+  "size": 1000,
+  "fold": 5,
+  "seed": 47,
+  "n_folds_config": 6,
+  "n_train": 834,
+  "n_heldout": 166,
+  "n_gold_eval": 735,
+  "n_benchmark": 7938,
+  "train_source_frac": {
+    "news": 0.5,
+    "twitter": 0.5
+  },
+  "student_model": "microsoft/deberta-v3-large",
+  "model_tag": "deberta-v3-large",
+  "hyperparams": {
+    "epochs": 3,
+    "weight_decay": 0.05,
+    "learning_rate": 1e-05
+  },
+  "warmup_ratio": 0.06,
+  "max_grad_norm": 1.0,
+  "class_weighting": true,
+  "label_smoothing": 0.0,
+  "final_train_loss": 0.4645073115825653,
+  "train_minutes": 0.83,
+  "train_class_dist": [
+    294,
+    540
+  ],
+  "heldout_macro_f1": 0.9154753045317457,
+  "heldout_macro_precision": 0.9114454094292803,
+  "heldout_macro_recall": 0.9202439410739743,
+  "heldout_accuracy": 0.9216867469879518,
+  "heldout_mcc": 0.831642808891788,
+  "heldout_f1_class_0": 0.8925619834710744,
+  "heldout_f1_class_1": 0.9383886255924171,
+  "heldout_n_pred_classes": 2.0,
+  "heldout_collapsed": false,
+  "heldout_pred_dist": [
+    62,
+    104
+  ],
+  "heldout_true_dist": [
+    59,
+    107
+  ],
+  "gold_macro_f1": 0.809421857405322,
+  "gold_macro_precision": 0.8095928078029113,
+  "gold_macro_recall": 0.8093589382785538,
+  "gold_accuracy": 0.8095238095238095,
+  "gold_mcc": 0.6189517018979267,
+  "gold_f1_class_0": 0.8050139275766016,
+  "gold_f1_class_1": 0.8138297872340425,
+  "gold_n_pred_classes": 2.0,
+  "gold_collapsed": false,
+  "gold_pred_dist": [
+    356,
+    379
+  ],
+  "gold_true_dist": [
+    362,
+    373
+  ],
+  "bench_macro_f1": 0.5181049221838463,
+  "bench_macro_precision": 0.5263363424981177,
+  "bench_macro_recall": 0.5765407850905254,
+  "bench_accuracy": 0.799697656840514,
+  "bench_mcc": 0.08979541928670742,
+  "bench_f1_class_0": 0.1497326203208556,
+  "bench_f1_class_1": 0.886477224046837,
+  "bench_n_pred_classes": 2.0,
+  "bench_collapsed": false,
+  "bench_pred_dist": [
+    1441,
+    6497
+  ],
+  "bench_true_dist": [
+    429,
+    7509
+  ]
+}

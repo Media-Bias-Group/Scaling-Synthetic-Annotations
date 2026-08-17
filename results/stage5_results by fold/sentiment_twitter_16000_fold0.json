@@ -1,0 +1,86 @@
+{
+  "task": "sentiment",
+  "source": "twitter",
+  "size": 16000,
+  "fold": 0,
+  "seed": 42,
+  "n_folds_config": 6,
+  "n_train": 13333,
+  "n_heldout": 2667,
+  "n_gold_eval": 11980,
+  "n_benchmark": 30164,
+  "student_model": "microsoft/deberta-v3-base",
+  "hyperparams": {
+    "epochs": 3,
+    "weight_decay": 0.05,
+    "learning_rate": 2e-05
+  },
+  "warmup_ratio": 0.06,
+  "max_grad_norm": 1.0,
+  "class_weighting": true,
+  "label_smoothing": 0.0,
+  "final_train_loss": 0.06910578023464002,
+  "train_minutes": 3.58,
+  "train_class_dist": [
+    4449,
+    4515,
+    4369
+  ],
+  "heldout_macro_f1": 0.9932730333956613,
+  "heldout_macro_precision": 0.99331270212114,
+  "heldout_macro_recall": 0.9932662818549499,
+  "heldout_accuracy": 0.9932508436445444,
+  "heldout_f1_class_0": 0.992090395480226,
+  "heldout_f1_class_1": 0.9917264202978489,
+  "heldout_f1_class_2": 0.9960022844089091,
+  "heldout_n_pred_classes": 3.0,
+  "heldout_collapsed": false,
+  "heldout_pred_dist": [
+    880,
+    910,
+    877
+  ],
+  "heldout_true_dist": [
+    890,
+    903,
+    874
+  ],
+  "gold_macro_f1": 0.6605449901786504,
+  "gold_macro_precision": 0.6627278597571848,
+  "gold_macro_recall": 0.6994138931038827,
+  "gold_accuracy": 0.6628547579298831,
+  "gold_f1_class_0": 0.7133579523748885,
+  "gold_f1_class_1": 0.616580310880829,
+  "gold_f1_class_2": 0.6516967072802337,
+  "gold_n_pred_classes": 3.0,
+  "gold_collapsed": false,
+  "gold_pred_dist": [
+    3631,
+    3930,
+    4419
+  ],
+  "gold_true_dist": [
+    4222,
+    2246,
+    5512
+  ],
+  "bench_macro_f1": 0.6161163196034584,
+  "bench_macro_precision": 0.6929387481001429,
+  "bench_macro_recall": 0.675282633986123,
+  "bench_accuracy": 0.6352274234186447,
+  "bench_f1_class_0": 0.7402663226282081,
+  "bench_f1_class_1": 0.6822656836342766,
+  "bench_f1_class_2": 0.4258169525478903,
+  "bench_n_pred_classes": 3.0,
+  "bench_collapsed": false,
+  "bench_pred_dist": [
+    12263,
+    14000,
+    3901
+  ],
+  "bench_true_dist": [
+    9440,
+    8651,
+    12073
+  ]
+}

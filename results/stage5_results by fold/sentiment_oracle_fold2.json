@@ -1,0 +1,90 @@
+{
+  "task": "sentiment",
+  "source": "gold_human",
+  "size": 39932,
+  "fold": 2,
+  "seed": 44,
+  "n_folds_config": 6,
+  "condition": "B4_oracle",
+  "n_train": 39932,
+  "n_heldout": 7987,
+  "n_gold_eval": 11980,
+  "n_benchmark": 30164,
+  "student_model": "microsoft/deberta-v3-base",
+  "hyperparams": {
+    "epochs": 3,
+    "weight_decay": 0.05,
+    "learning_rate": 2e-05
+  },
+  "warmup_ratio": 0.06,
+  "max_grad_norm": 1.0,
+  "class_weighting": true,
+  "label_smoothing": 0.0,
+  "final_train_loss": 0.49930751584788674,
+  "train_minutes": 10.22,
+  "train_class_dist": [
+    14017,
+    7609,
+    18306
+  ],
+  "heldout_macro_f1": 0.7413161652192554,
+  "heldout_macro_precision": 0.7327233951074238,
+  "heldout_macro_recall": 0.7545665383807095,
+  "heldout_accuracy": 0.7424564917991736,
+  "heldout_mcc": 0.599890481541565,
+  "heldout_f1_class_0": 0.7853818307188416,
+  "heldout_f1_class_1": 0.7229357798165138,
+  "heldout_f1_class_2": 0.7156308851224106,
+  "heldout_n_pred_classes": 3.0,
+  "heldout_collapsed": false,
+  "heldout_pred_dist": [
+    2997,
+    1748,
+    3242
+  ],
+  "heldout_true_dist": [
+    2804,
+    1522,
+    3661
+  ],
+  "gold_macro_f1": 0.7484398940003129,
+  "gold_macro_precision": 0.740248457645107,
+  "gold_macro_recall": 0.7606413009678671,
+  "gold_accuracy": 0.7484974958263773,
+  "gold_mcc": 0.6077716224438052,
+  "gold_f1_class_0": 0.7858447488584475,
+  "gold_f1_class_1": 0.7371727748691099,
+  "gold_f1_class_2": 0.7223021582733813,
+  "gold_n_pred_classes": 3.0,
+  "gold_collapsed": false,
+  "gold_pred_dist": [
+    4538,
+    2529,
+    4913
+  ],
+  "gold_true_dist": [
+    4222,
+    2246,
+    5512
+  ],
+  "bench_macro_f1": 0.6874311620926048,
+  "bench_macro_precision": 0.6976098070666746,
+  "bench_macro_recall": 0.7103955545203243,
+  "bench_accuracy": 0.6886354594881315,
+  "bench_mcc": 0.5516314810239464,
+  "bench_f1_class_0": 0.7469536600551454,
+  "bench_f1_class_1": 0.734258745141588,
+  "bench_f1_class_2": 0.581081081081081,
+  "bench_n_pred_classes": 3.0,
+  "bench_collapsed": false,
+  "bench_pred_dist": [
+    13046,
+    9359,
+    7759
+  ],
+  "bench_true_dist": [
+    9440,
+    8651,
+    12073
+  ]
+}

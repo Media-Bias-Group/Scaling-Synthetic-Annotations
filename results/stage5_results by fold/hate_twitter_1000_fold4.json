@@ -1,0 +1,86 @@
+{
+  "task": "hate",
+  "source": "twitter",
+  "size": 1000,
+  "fold": 4,
+  "seed": 46,
+  "n_folds_config": 6,
+  "n_train": 834,
+  "n_heldout": 166,
+  "n_gold_eval": 3846,
+  "n_benchmark": 24783,
+  "student_model": "microsoft/deberta-v3-base",
+  "hyperparams": {
+    "epochs": 3,
+    "weight_decay": 0.05,
+    "learning_rate": 3e-05
+  },
+  "warmup_ratio": 0.06,
+  "max_grad_norm": 1.0,
+  "class_weighting": true,
+  "label_smoothing": 0.0,
+  "final_train_loss": 0.8243048415993744,
+  "train_minutes": 0.26,
+  "train_class_dist": [
+    49,
+    303,
+    482
+  ],
+  "heldout_macro_f1": 0.5615381475282688,
+  "heldout_macro_precision": 0.5512820512820512,
+  "heldout_macro_recall": 0.5748520036429873,
+  "heldout_accuracy": 0.8072289156626506,
+  "heldout_f1_class_0": 0.0,
+  "heldout_f1_class_1": 0.8396946564885496,
+  "heldout_f1_class_2": 0.8449197860962567,
+  "heldout_n_pred_classes": 3.0,
+  "heldout_collapsed": false,
+  "heldout_pred_dist": [
+    5,
+    70,
+    91
+  ],
+  "heldout_true_dist": [
+    9,
+    61,
+    96
+  ],
+  "gold_macro_f1": 0.4245460177581517,
+  "gold_macro_precision": 0.46310496425756914,
+  "gold_macro_recall": 0.4527009900483116,
+  "gold_accuracy": 0.4713988559542382,
+  "gold_f1_class_0": 0.22903629536921152,
+  "gold_f1_class_1": 0.43682588597842836,
+  "gold_f1_class_2": 0.6077758719268154,
+  "gold_n_pred_classes": 3.0,
+  "gold_collapsed": false,
+  "gold_pred_dist": [
+    392,
+    1515,
+    1939
+  ],
+  "gold_true_dist": [
+    1206,
+    1081,
+    1559
+  ],
+  "bench_macro_f1": 0.5857464680633445,
+  "bench_macro_precision": 0.5678570679624716,
+  "bench_macro_recall": 0.6241084416281758,
+  "bench_accuracy": 0.8181818181818182,
+  "bench_f1_class_0": 0.1456953642384106,
+  "bench_f1_class_1": 0.8931314341739747,
+  "bench_f1_class_2": 0.7184126057776481,
+  "bench_n_pred_classes": 3.0,
+  "bench_collapsed": false,
+  "bench_pred_dist": [
+    1137,
+    17528,
+    6118
+  ],
+  "bench_true_dist": [
+    1430,
+    19190,
+    4163
+  ]
+}
